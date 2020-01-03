@@ -22,8 +22,15 @@ class TodoContextProvider extends Component {
     /**
      * Create a new todo item
      */
-    createTodo () {
+    createTodo (event, todo) {
+        event.preventDefault();
 
+        let newTodos = [...this.state.todos];
+        newTodos.push(todo);
+
+        this.setState({
+            todos: newTodos
+        });
     }
 
     /**
