@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c425a3c8-3b7f-4bca-9678-06c869e8c5ad" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/js/components/DeleteDialog.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/components/TodoTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/components/TodoTable.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/contexts/TodoContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/contexts/TodoContext.js" afterDir="false" />
     </list>
@@ -177,7 +179,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1578084338443</updated>
-      <workItem from="1578084339968" duration="7640000" />
+      <workItem from="1578084339968" duration="9468000" />
     </task>
     <task id="LOCAL-00001" summary="Webpack encore added">
       <created>1578084614468</created>
@@ -207,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578090448068</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Update todo method added">
+      <created>1578092027858</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1578092027859</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,13 +227,14 @@
     <MESSAGE value="Composer packages added&#10;create react context&#10;render app" />
     <MESSAGE value="MaterialUI added" />
     <MESSAGE value="Create todo method added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create todo method added" />
+    <MESSAGE value="Update todo method added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update todo method added" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="573" y="30" key="CommitChangelistDialog2" timestamp="1578090447421">
+    <state x="573" y="30" key="CommitChangelistDialog2" timestamp="1578092027251">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="573" y="30" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1578090447421" />
+    <state x="573" y="30" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1578092027251" />
     <state x="475" y="473" width="524" height="206" key="Github.ShareDialog" timestamp="1578084544240">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -233,10 +243,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="168" key="SettingsEditor/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1578086033745" />
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1578090449021">
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1578092029488">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1578090449021" />
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1578092029488" />
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1578085739898">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

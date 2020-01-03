@@ -8,7 +8,7 @@ import DeleteIcon from "@material-ui/icons/Delete";
 import AddIcon from "@material-ui/icons/Add";
 import CloseIcon from "@material-ui/icons/Close";
 import DoneIcon from "@material-ui/icons/Done";
-import InputAdornment from '@material-ui/core/InputAdornment';
+import DeleteDialog from "./DeleteDialog";
 
 function TodoTable() {
     const context = useContext(TodoContext);
@@ -20,69 +20,81 @@ function TodoTable() {
     const [editIsShown, setEditIsShown] = useState(false);
     const [editTodo, setEditTodo] = useState('');
 
+    // delete todo
+    const [deleteConfirmationIsShown, setDeleteConfirmationIsShown] = useState(false);
+    const [selectedTodo, setSelectedTodo] = useState('');
+
     return (
-        <form onSubmit={event => context.createTodo(event, { name: addTodo })}>
-            <Table>
-                <TableHead>
-                    <TableRow>
-                        <TableCell>Task</TableCell>
-                        <TableCell align="right">Actions</TableCell>
-                    </TableRow>
-                </TableHead>
-                <TableBody>
-                    <TableRow>
-                        <TableCell>
-                            <TextField label={"New Task"} value={addTodo} onChange={event => {setAddTodo(event.target.value)}} fullWidth={true}/>
-                        </TableCell>
-                        <TableCell align="right">
-                            <IconButton type="submit">
-                                <AddIcon/>
-                            </IconButton>
-                        </TableCell>
-                    </TableRow>
-                    {context.todos.slice().reverse().map((todo, index) => (
-                        <TableRow key={index}>
+        <Fragment>
+
+            <form onSubmit={event => context.createTodo(event, { name: addTodo })}>
+                <Table>
+                    <TableHead>
+                        <TableRow>
+                            <TableCell>Task</TableCell>
+                            <TableCell align="right">Actions</TableCell>
+                        </TableRow>
+                    </TableHead>
+                    <TableBody>
+                        <TableRow>
                             <TableCell>
-
-                                {editIsShown === todo.id ?
-                                    <TextField
-                                        fullWidth={true}
-                                        value={editTodo}
-                                        onChange={ event => setEditTodo(event.target.value) }
-                                        InputProps={{
-                                            endAdornment: <Fragment>
-                                                <IconButton onClick={event => setEditIsShown(false) }>
-                                                    <CloseIcon/>
-                                                </IconButton>
-                                                <IconButton onClick={event => {
-                                                    context.updateTodo({id: todo.id, name: editTodo});
-                                                    setEditIsShown(false)
-                                                }}>
-                                                    <DoneIcon/>
-                                                </IconButton>
-                                            </Fragment>
-                                        }}
-                                    />
-                                    : todo.name
-                                }
-
+                                <TextField label={"New Task"} value={addTodo} onChange={event => {setAddTodo(event.target.value)}} fullWidth={true}/>
                             </TableCell>
                             <TableCell align="right">
-
-                                <IconButton onClick={ event => {setEditIsShown(todo.id); setEditTodo(todo.name)} }>
-                                    <EditIcon/>
+                                <IconButton type="submit">
+                                    <AddIcon/>
                                 </IconButton>
-
-                                <IconButton>
-                                    <DeleteIcon/>
-                                </IconButton>
-
                             </TableCell>
                         </TableRow>
-                    ))}
-                </TableBody>
-            </Table>
-        </form>
+                        {context.todos.slice().reverse().map((todo, index) => (
+                            <TableRow key={index}>
+                                <TableCell>
+
+                                    {editIsShown === todo.id ?
+                                        <TextField
+                                            fullWidth={true}
+                                            value={editTodo}
+                                            onChange={ event => setEditTodo(event.target.value) }
+                                            InputProps={{
+                                                endAdornment: <Fragment>
+                                                    <IconButton onClick={event => setEditIsShown(false) }>
+                                                        <CloseIcon/>
+                                                    </IconButton>
+                                                    <IconButton onClick={event => {
+                                                        context.updateTodo({id: todo.id, name: editTodo});
+                                                        setEditIsShown(false)
+                                                    }}>
+                                                        <DoneIcon/>
+                                                    </IconButton>
+                                                </Fragment>
+                                            }}
+                                        />
+                                        : todo.name
+                                    }
+
+                                </TableCell>
+                                <TableCell align="right">
+
+                                    <IconButton onClick={ event => {setEditIsShown(todo.id); setEditTodo(todo.name)} }>
+                                        <EditIcon/>
+                                    </IconButton>
+
+                                    <IconButton onClick={event => { setDeleteConfirmationIsShown(true); setSelectedTodo(todo) }}>
+                                        <DeleteIcon/>
+                                    </IconButton>
+
+                                </TableCell>
+                            </TableRow>
+                        ))}
+                    </TableBody>
+                </Table>
+            </form>
+
+            {deleteConfirmationIsShown && (
+                <DeleteDialog todo={selectedTodo} open={deleteConfirmationIsShown} setDeleteConfirmationIsShown={setDeleteConfirmationIsShown}/>
+            )}
+
+        </Fragment>
     );
 }
 

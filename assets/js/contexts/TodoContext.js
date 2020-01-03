@@ -61,8 +61,18 @@ class TodoContextProvider extends Component {
     /**
      * Delete a todo item
      */
-    deleteTodo () {
+    deleteTodo (selectedTodo) {
+        let todos = [...this.state.todos];
 
+        let todo = todos.find(todo => {
+            return todo.id === selectedTodo.id
+        });
+
+        todos.splice(todos.indexOf(todo), 1);
+
+        this.setState({
+            todos: todos
+        });
     }
 
     render() {
