@@ -177,7 +177,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1578084338443</updated>
-      <workItem from="1578084339968" duration="6082000" />
+      <workItem from="1578084339968" duration="7640000" />
     </task>
     <task id="LOCAL-00001" summary="Webpack encore added">
       <created>1578084614468</created>
@@ -200,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578089287018</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Create todo method added">
+      <created>1578090448068</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1578090448068</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,13 +217,14 @@
     <MESSAGE value="Webpack encore added" />
     <MESSAGE value="Composer packages added&#10;create react context&#10;render app" />
     <MESSAGE value="MaterialUI added" />
-    <option name="LAST_COMMIT_MESSAGE" value="MaterialUI added" />
+    <MESSAGE value="Create todo method added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create todo method added" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="573" y="30" key="CommitChangelistDialog2" timestamp="1578089286444">
+    <state x="573" y="30" key="CommitChangelistDialog2" timestamp="1578090447421">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="573" y="30" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1578089286444" />
+    <state x="573" y="30" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1578090447421" />
     <state x="475" y="473" width="524" height="206" key="Github.ShareDialog" timestamp="1578084544240">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -225,10 +233,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="168" key="SettingsEditor/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1578086033745" />
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1578089288124">
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1578090449021">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1578089288124" />
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1578090449021" />
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1578085739898">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
