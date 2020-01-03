@@ -1,5 +1,11 @@
 {
+    "dependencies": {
+        "prop-types": "^15.7.2",
+        "react": "^16.12.0",
+        "react-dom": "^16.12.0"
+    },
     "devDependencies": {
+        "@babel/preset-react": "^7.7.4",
         "@symfony/webpack-encore": "^0.28.2",
         "core-js": "^3.0.0",
         "regenerator-runtime": "^0.13.2",
