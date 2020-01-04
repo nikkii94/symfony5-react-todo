@@ -34,7 +34,7 @@ class TodoController extends AbstractController
     }
 
     /**
-     * @Route("/create", name="api_todo_create")
+     * @Route("/create", name="api_todo_create", methods={"POST"})
      * @param Request $request
      * @return JsonResponse
      */
@@ -59,7 +59,7 @@ class TodoController extends AbstractController
     }
 
     /**
-     * @Route("/read", name="api_todo_read")
+     * @Route("/read", name="api_todo_read", methods={"GET"})
      */
     public function read(): JsonResponse
     {
@@ -75,11 +75,28 @@ class TodoController extends AbstractController
     }
 
     /**
-     * @Route("/update", name="api_todo_update")
+     * @Route("/update/{id}", name="api_todo_update",  methods={"PATCH"})
+     * @param Todo $todo
+     * @param Request $request
+     * @return JsonResponse
      */
-    public function update(): void
+    public function update(Todo $todo, Request $request): JsonResponse
     {
+        $content = json_decode($request->getContent(), false, 512, JSON_THROW_ON_ERROR);
+        $todo->setName($content->name);
 
+        try {
+            $this->entityManager->persist($todo);
+            $this->entityManager->flush();
+
+            return $this->json([
+                'todo' => $todo->toArray()
+            ]);
+        }catch (Exception $exception) {
+            return $this->json([
+                'error' => $exception->getMessage()
+            ]);
+        }
     }
 
     /**
