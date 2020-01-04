@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c425a3c8-3b7f-4bca-9678-06c869e8c5ad" name="Default Changelist" comment="Delete todo method added">
-      <change afterPath="$PROJECT_DIR$/src/Controller/TodoController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Todo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20200104104444.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/TodoRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="c425a3c8-3b7f-4bca-9678-06c869e8c5ad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/contexts/TodoContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/contexts/TodoContext.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/TodoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/TodoController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,6 +171,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/web-profiler-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/phpunit-bridge" />
       <path value="$PROJECT_DIR$/vendor/easycorp/easy-log-handler" />
+      <path value="$PROJECT_DIR$/vendor/sensio/framework-extra-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1VtthWTefo24kgsmdcls0CP1UdS" />
@@ -219,7 +218,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1578084338443</updated>
-      <workItem from="1578084339968" duration="11273000" />
+      <workItem from="1578084339968" duration="13073000" />
     </task>
     <task id="LOCAL-00001" summary="Webpack encore added">
       <created>1578084614468</created>
@@ -263,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578094108309</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Fetch todo from database">
+      <created>1578135369995</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1578135369995</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,7 +282,8 @@
     <MESSAGE value="Create todo method added" />
     <MESSAGE value="Update todo method added" />
     <MESSAGE value="Delete todo method added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Delete todo method added" />
+    <MESSAGE value="Fetch todo from database" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fetch todo from database" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="184" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578134669089">
@@ -287,10 +294,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="765" y="242" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1578134892524" />
-    <state x="573" y="30" key="CommitChangelistDialog2" timestamp="1578135341793">
+    <state x="573" y="30" key="CommitChangelistDialog2" timestamp="1578135369294">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="573" y="30" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1578135341793" />
+    <state x="573" y="30" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1578135369294" />
     <state x="475" y="473" width="524" height="206" key="Github.ShareDialog" timestamp="1578084544240">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -299,10 +306,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="168" key="SettingsEditor/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1578086033745" />
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1578094109656">
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1578135371668">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1578094109656" />
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1578135371668" />
     <state x="794" y="352" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1578134681462">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
