@@ -75,7 +75,7 @@ class TodoController extends AbstractController
     }
 
     /**
-     * @Route("/update/{id}", name="api_todo_update",  methods={"PATCH"})
+     * @Route("/update/{id}", name="api_todo_update",  methods={"PUT"})
      * @param Todo $todo
      * @param Request $request
      * @return JsonResponse
