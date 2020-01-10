@@ -61,8 +61,10 @@ class TodoController extends AbstractController
         }catch (Exception $exception) {
             return $this->json([
                 'message' => [
-                    'level' => 'success',
-                    'text' =>  $exception->getMessage()
+                    'level' => 'error',
+                    'text' =>  [
+                        $exception->getMessage()
+                    ]
                 ]
             ]);
         }
