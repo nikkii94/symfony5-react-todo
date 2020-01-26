@@ -22,7 +22,8 @@ jobs:
 #                uses: docker://jakzal/phpqa:php7.4-alpine
                 run: |
                     cd app
-                    docker build -t "jakzal/phpqa:php7.4-alpine" --build-arg "phpstan analyze src/ -l 1"
+                    docker pull jakzal/phpqa:php7.4-alpine
+                    docker run -it --rm "jakzal/phpqa:php7.4-alpine" --build-arg "phpstan analyze src/ -l 1"
 
 #                with:
 #                    args: phpstan analyze app/src/ -l 1
