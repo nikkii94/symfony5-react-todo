@@ -17,7 +17,7 @@ jobs:
             - name: Run PHPStan
               working-directory: ./app
               run: |
-                  php vendor/bin/phpstan analyze src
+                  php vendor/bin/phpstan analyze -c phpstan.neon src tests --level 7
 
 #            - name: PHPStan
 #              uses: docker://jakzal/phpqa:php7.4-alpine

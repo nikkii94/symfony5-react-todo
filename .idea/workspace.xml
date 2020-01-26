@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c425a3c8-3b7f-4bca-9678-06c869e8c5ad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/phpstan.neon" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/static-code-analysis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/static-code-analysis.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Migrations/Version20200104104444.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Migrations/Version20200104104444.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -246,7 +244,7 @@
       <workItem from="1578750292043" duration="11182000" />
       <workItem from="1579028204360" duration="3816000" />
       <workItem from="1580059396289" duration="2766000" />
-      <workItem from="1580062615036" duration="10382000" />
+      <workItem from="1580062615036" duration="10727000" />
     </task>
     <task id="LOCAL-00001" summary="Webpack encore added">
       <created>1578084614468</created>
@@ -479,7 +477,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580072830332</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="phpstan config">
+      <created>1580073187169</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1580073187169</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
