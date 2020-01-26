@@ -1,8 +1,8 @@
 Symfony 5 Todo Application with React & Material UI
 
-[![Actions Status](https://github.com/nikkii94/symfony5-react-todo/workflows/CI/badge.svg)](https://github.com/nikkii94/symfony5-react-todo/actions)
+![CI](https://github.com/nikkii94/symfony5-react-todo/workflows/CI/badge.svg)
 
-[![Actions Status](https://github.com/nikkii94/symfony5-react-todo/workflows/Static code analysis/badge.svg)](https://github.com/nikkii94/symfony5-react-todo/actions)
+![Static code analysis](https://github.com/nikkii94/symfony5-react-todo/workflows/Static%20code%20analysis/badge.svg?branch=master)
 
 /etc/hosts
 ``` 
