@@ -10,6 +10,7 @@ use Doctrine\ORM\Mapping as ORM;
 class Todo
 {
     /**
+     * @var int
      * @ORM\Id()
      * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
@@ -17,6 +18,7 @@ class Todo
     private $id;
 
     /**
+     * @var string
      * @ORM\Column(type="string")
      */
     private $name;
@@ -48,6 +50,9 @@ class Todo
         $this->name = $name;
     }
 
+    /**
+     * @return array<string, int>
+     */
     public function toArray() :array {
         return [
             'id' => $this->id,

@@ -40,7 +40,11 @@ class TodoController extends AbstractController
      */
     public function create(Request $request): JsonResponse
     {
-        $content = json_decode($request->getContent(), false, 512, JSON_THROW_ON_ERROR);
+
+        /** @var string $requestContent */
+        $requestContent = $request->getContent();
+
+        $content = json_decode($requestContent, false, 512, JSON_THROW_ON_ERROR);
         $todo = new Todo();
         $todo->setName($content->name);
 
@@ -94,7 +98,10 @@ class TodoController extends AbstractController
      */
     public function update(Todo $todo, Request $request): JsonResponse
     {
-        $content = json_decode($request->getContent(), false, 512, JSON_THROW_ON_ERROR);
+        /** @var string $requestContent */
+        $requestContent = $request->getContent();
+
+        $content = json_decode($requestContent, false, 512, JSON_THROW_ON_ERROR);
         $todo->setName($content->name);
 
         try {
