@@ -1,0 +1,5 @@
+parameters:
+    autoload_files:
+            - %rootDir%/test/phpstan-bootstrap.php
+    paths:
+        - %currentWorkingDirectory%/app/src
