@@ -20,12 +20,12 @@ class TodoController extends AbstractController
     /**
      * @var TodoRepository
      */
-    private TodoRepository $todoRepository;
+    private $todoRepository;
 
     /**
      * @var EntityManagerInterface
      */
-    private EntityManagerInterface $entityManager;
+    private $entityManager;
 
     public function __construct(TodoRepository $todoRepository, EntityManagerInterface $entityManager)
     {

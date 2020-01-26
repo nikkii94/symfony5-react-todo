@@ -2,7 +2,7 @@
     "type": "project",
     "license": "proprietary",
     "require": {
-        "php": "^7.4",
+        "php": "^7.3",
         "ext-ctype": "*",
         "ext-iconv": "*",
         "ext-json": "*",
@@ -30,9 +30,11 @@
         "symfony/validator": "5.0.*",
         "symfony/web-link": "5.0.*",
         "symfony/webpack-encore-bundle": "^1.7",
-        "symfony/yaml": "5.0.*"
+        "symfony/yaml": "5.0.*",
+        "workerman/phpsocket.io": "^1.1"
     },
     "require-dev": {
+        "roave/security-advisories": "dev-master",
         "symfony/maker-bundle": "^1.14",
         "symfony/debug-pack": "*",
         "symfony/phpunit-bridge": "^5.0",
@@ -80,6 +82,7 @@
         "symfony/symfony": "*"
     },
     "extra": {
+        "bin-dir": "bin",
         "symfony": {
             "allow-contrib": false,
             "require": "5.0.*"

@@ -14,12 +14,12 @@ class Todo
      * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
      */
-    private ?int $id;
+    private $id;
 
     /**
      * @ORM\Column(type="string")
      */
-    private ?string $name;
+    private $name;
 
     public function __construct()
     {

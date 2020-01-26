@@ -1,0 +1,85 @@
+# name of the workflow
+name: CI
+
+# event that trigger the execution of the action (can by multiple
+on:
+    push:
+        branches:
+            - master
+            - features/*
+    pull_request:
+        branches:
+            - master
+            - features/*
+
+# list of jobs to be executed.
+# jobs by default are executed in parallel
+jobs:
+    build:
+        # the name of the image of the virtual machine to be used
+        runs-on: ubuntu-latest
+        env:
+            APP_ENV: test
+        services:
+            mysql:
+                image: mysql:5.7
+                env:
+                    MYSQL_ROOT_PASSWORD: root
+                    MYSQL_DATABASE: sf5_react_todo_test_db
+                ports:
+                    - 3306
+                options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
+
+        # each job contains a sequence of tasks called steps
+        # steps can run commands
+        steps:
+            -   uses: actions/checkout@v1
+
+            -   name: Verify MYSQL connection is up
+                run: |
+                    sudo apt-get install -y mysql-client
+                    mysql --host 127.0.0.1 --port ${{ job.services.mysql.ports['3306'] }} -uroot -proot -e "SHOW DATABASES"
+
+            -   name: Copy ENV Configuration for CI
+                run: |
+                    php -r "file_exists('.env') || copy('.env.ci', '.env');"
+
+            -   name: Install composer dependencies
+                working-directory: ./app
+                run: |
+                    composer install -q --no-ansi --no-interaction --no-suggest --prefer-dist
+
+            -   name: Print ENV
+                working-directory: ./app
+                run: printenv
+
+            -   name: Install && build frontend assets
+                working-directory: ./app
+                run: |
+                    yarn install --pure-lockfile
+                    yarn encore production
+
+            -   name: Generate secret
+                working-directory: ./app
+                run: |
+                    php bin/console secrets:generate-keys
+
+#            -   name: Create DB schema
+#                working-directory: ./app
+#                run: |
+#                    php bin/console doctrine:database:create
+#                    php bin/console doctrine:schema:update -f
+
+            -   name: Run migrations
+                working-directory: ./app
+                run: |
+                    composer require symfony/orm-pack
+                    php bin/console doctrine:schema:update --force || echo "No migrations found or schema update failed"
+                    php bin/console doctrine:migrations:migrate || echo "No migrations found or migration failed"
+                env:
+                    DATABASE_URL: mysql://root:root@127.0.0.1:${{ job.services.mysql.ports['3306'] }}/sf5_react_todo_test_db
+
+            -   name: Run tests
+                working-directory: ./app
+                run: |
+                    php bin/phpunit

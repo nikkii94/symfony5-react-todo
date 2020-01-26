@@ -2,10 +2,85 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c425a3c8-3b7f-4bca-9678-06c869e8c5ad" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env.ci" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/workflows/static-code-analysis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/composerJson.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Niki.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/app/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/app/debug/xdebug.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/app/env/dev/php.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/app/env/prod/php.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/mysql/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/mysql/conf/mysql.cnf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/nginx/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/nginx/conf/default_template.cnf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/nginx/conf/nginx.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/nginx/conf/openssl.cnf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/nginx/entrypoint.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/app/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.test" beforeDir="false" afterPath="$PROJECT_DIR$/app/.env.test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/symfony5-react-todo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony5-react-todo.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/contexts/TodoContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/contexts/TodoContext.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/TodoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/TodoController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/components/AppSnackBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/js/components/AppSnackBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/components/DeleteDialog.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/js/components/DeleteDialog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/components/TodoTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/js/components/TodoTable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/contexts/TodoContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/js/contexts/TodoContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/console" beforeDir="false" afterPath="$PROJECT_DIR$/app/bin/console" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/bootstrap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/assets.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/assets.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/cache.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/cache.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/doctrine.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/doctrine_migrations.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/doctrine_migrations.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/framework.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/prod/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/prod/doctrine.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/prod/routing.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/prod/routing.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/prod/webpack_encore.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/prod/webpack_encore.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/routing.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/routing.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/test/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/test/framework.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/test/webpack_encore.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/test/webpack_encore.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/webpack_encore.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/webpack_encore.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/routes.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes/annotations.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/routes/annotations.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes/dev/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/routes/dev/framework.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpunit.xml.dist" beforeDir="false" afterPath="$PROJECT_DIR$/app/phpunit.xml.dist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/IndexController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/TodoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/TodoController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Entity/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Todo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Entity/Todo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Migrations/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200104104444.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Migrations/Version20200104104444.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Repository/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/TodoRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Repository/TodoRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/index/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/app/tests/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/translations/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/app/translations/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/yarn.lock" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,6 +131,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="E:\GITHUB_PROJECTS\symfony5-react-todo\.idea" />
+      </set>
+    </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -168,6 +250,9 @@
       <path value="$PROJECT_DIR$/vendor/symfony/phpunit-bridge" />
       <path value="$PROJECT_DIR$/vendor/easycorp/easy-log-handler" />
       <path value="$PROJECT_DIR$/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/vendor/workerman/phpsocket.io" />
+      <path value="$PROJECT_DIR$/vendor/workerman/channel" />
+      <path value="$PROJECT_DIR$/vendor/workerman/workerman" />
     </include_path>
   </component>
   <component name="ProjectId" id="1VtthWTefo24kgsmdcls0CP1UdS" />
@@ -183,19 +268,33 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="ignore_missing_gitignore" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\GITHUB_PROJECTS\symfony5-react-todo" />
+      <recent name="E:\GITHUB_PROJECTS\symfony5-react-todo\.docker\php-fpm" />
+      <recent name="E:\GITHUB_PROJECTS\symfony5-react-todo\.docker\example" />
+      <recent name="E:\GITHUB_PROJECTS\symfony5-react-todo\.docker\php" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\GITHUB_PROJECTS\symfony5-react-todo\app" />
+      <recent name="E:\GITHUB_PROJECTS\symfony5-react-todo\.docker\apache" />
+      <recent name="E:\GITHUB_PROJECTS\symfony5-react-todo\.docker\example" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
       <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
       </list>
     </option>
   </component>
@@ -210,7 +309,16 @@
       <option name="presentableId" value="Default" />
       <updated>1578084338443</updated>
       <workItem from="1578084339968" duration="15856000" />
-      <workItem from="1578325391561" duration="57000" />
+      <workItem from="1578325391561" duration="1664000" />
+      <workItem from="1578346363721" duration="4341000" />
+      <workItem from="1578420816734" duration="1453000" />
+      <workItem from="1578430518858" duration="1175000" />
+      <workItem from="1578602944257" duration="1392000" />
+      <workItem from="1578675200615" duration="3933000" />
+      <workItem from="1578750292043" duration="11182000" />
+      <workItem from="1579028204360" duration="3816000" />
+      <workItem from="1580059396289" duration="2766000" />
+      <workItem from="1580062615036" duration="2670000" />
     </task>
     <task id="LOCAL-00001" summary="Webpack encore added">
       <created>1578084614468</created>
@@ -275,11 +383,45 @@
       <option name="project" value="LOCAL" />
       <updated>1578137518592</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Fix request method to put from patch">
+      <created>1578325592315</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1578325592316</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Snackbar for created todo">
+      <created>1578680761374</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1578680761374</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Snackbar levels">
+      <created>1578681157561</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1578681157561</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Webpack encore added" />
@@ -291,44 +433,73 @@
     <MESSAGE value="Fetch todo from database" />
     <MESSAGE value="Create + Delete methods" />
     <MESSAGE value="Update method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update method" />
+    <MESSAGE value="Fix request method to put from patch" />
+    <MESSAGE value="Snackbar for created todo" />
+    <MESSAGE value="Snackbar levels" />
+    <option name="LAST_COMMIT_MESSAGE" value="Snackbar levels" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="184" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578134669089">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="184" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1578134669089" />
+    <state x="704" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578756476166">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="704" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1578347388879" />
+    <state x="704" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050/1920.-180.1920.1050@0.0.1920.1050" timestamp="1578756476166" />
     <state x="765" y="242" key="#com.intellij.ide.util.MemberChooser" timestamp="1578134892524">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="765" y="242" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1578134892524" />
-    <state x="573" y="30" key="CommitChangelistDialog2" timestamp="1578137517986">
+    <state x="640" y="254" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1578349054381">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="573" y="30" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1578137517986" />
-    <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1578180034902">
+    <state x="640" y="254" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1578349054381" />
+    <state x="210" y="284" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1579104796071">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="740" y="281" key="FileChooserDialogImpl/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1578180034902" />
+    <state x="210" y="284" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050/1920.-180.1920.1050@0.0.1920.1050" timestamp="1579104796071" />
+    <state x="573" y="30" key="CommitChangelistDialog2" timestamp="1578681156886">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="573" y="30" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1578681156886" />
+    <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1579029505342">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="740" y="281" key="FileChooserDialogImpl/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1578430298968" />
+    <state x="740" y="281" key="FileChooserDialogImpl/0.0.1920.1050/1920.-180.1920.1050@0.0.1920.1050" timestamp="1579029505342" />
     <state x="475" y="473" width="524" height="206" key="Github.ShareDialog" timestamp="1578084544240">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="475" y="473" width="524" height="206" key="Github.ShareDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1578084544240" />
+    <state x="540" y="261" key="IDE.errors.dialog" timestamp="1578755815328">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="540" y="261" key="IDE.errors.dialog/0.0.1920.1050/1920.-180.1920.1050@0.0.1920.1050" timestamp="1578755815328" />
+    <state x="752" y="152" key="RollbackChangesDialog" timestamp="1578753204032">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="752" y="152" key="RollbackChangesDialog/0.0.1920.1050/1920.-180.1920.1050@0.0.1920.1050" timestamp="1578753204032" />
     <state x="461" y="168" key="SettingsEditor" timestamp="1578086033745">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="168" key="SettingsEditor/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1578086033745" />
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1578137521473">
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1578681578362">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1578137521473" />
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1578681578362" />
     <state x="794" y="352" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1578134681462">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="794" y="352" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1578134681462" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1578085739898">
+    <state x="639" y="263" width="642" height="524" key="find.popup" timestamp="1578758304477">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1578085739898" />
+    <state x="639" y="263" width="642" height="524" key="find.popup/0.0.1920.1050/1920.-180.1920.1050@0.0.1920.1050" timestamp="1578758304477" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1578680974785">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1578680974785" />
   </component>
 </project>
