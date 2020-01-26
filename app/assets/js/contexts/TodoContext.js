@@ -60,16 +60,23 @@ class TodoContextProvider extends Component {
     updateTodo (updateTodo) {
         axios.put(`/api/todo/update/${updateTodo.id}`, updateTodo)
             .then(response => {
-                let todos = [...this.state.todos];
+                if (response.data.message.level === 'success') {
+                    let todos = [...this.state.todos];
 
-                let todo = todos.find(todo => {
-                    return todo.id === updateTodo.id
-                });
-                todo.name = response.data.todo.name;
+                    let todo = todos.find(todo => {
+                        return todo.id === updateTodo.id
+                    });
+                    todo.name = response.data.todo.name;
 
-                this.setState({
-                    todos: todos
-                });
+                    this.setState({
+                        todos: todos,
+                        message: response.data.message
+                    });
+                } else {
+                    this.setState({
+                        message: response.data.message
+                    });
+                }
             })
             .catch(error => console.error(error));
     }
@@ -80,17 +87,24 @@ class TodoContextProvider extends Component {
     deleteTodo (selectedTodo) {
         axios.delete(`/api/todo/delete/${selectedTodo.id}`)
             .then(response => {
-                let todos = [...this.state.todos];
+                if (response.data.message.level === 'success') {
+                    let todos = [...this.state.todos];
 
-                let todo = todos.find(todo => {
-                    return todo.id === selectedTodo.id
-                });
+                    let todo = todos.find(todo => {
+                        return todo.id === selectedTodo.id
+                    });
 
-                todos.splice(todos.indexOf(todo), 1);
+                    todos.splice(todos.indexOf(todo), 1);
 
-                this.setState({
-                    todos: todos
-                });
+                    this.setState({
+                        todos: todos,
+                        message: response.data.message
+                    });
+                } else {
+                    this.setState({
+                        message: response.data.message
+                    });
+                }
             })
             .catch(error => console.error(error));
     }
