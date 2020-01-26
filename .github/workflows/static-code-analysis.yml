@@ -16,7 +16,8 @@ jobs:
             - name: PHPStan
               uses: docker://jakzal/phpqa:php7.4-alpine
               with:
-                  args: phpstan analyze -c ./phpstan.neon app/src/ -l 1
+                  args: phpstan analyze app/src/ -l 1
+
             - name: PHP-CS-Fixer
               uses: docker://jakzal/phpqa:php7.4-alpine
               with:

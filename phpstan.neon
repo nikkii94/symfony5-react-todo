@@ -1,4 +1,4 @@
-parameters:
-    bootstrap: %rootDir%/../../../phpstan-bootstrap.php
-    autoload_files:
-        - app/vendor/autoload.php
+#parameters:
+#    bootstrap: %rootDir%/../../../phpstan-bootstrap.php
+#    autoload_files:
+#        - app/vendor/autoload.php
