@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c425a3c8-3b7f-4bca-9678-06c869e8c5ad" name="Default Changelist" comment="">
+    <list default="true" id="c425a3c8-3b7f-4bca-9678-06c869e8c5ad" name="Default Changelist" comment="Altering entity with description">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/js/components/TodoTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/js/components/TodoTable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/js/contexts/TodoContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/js/contexts/TodoContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Controller/TodoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/TodoController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Entity/Todo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Entity/Todo.php" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,39 +15,7 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution>
-      <executable />
-    </execution>
-  </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="symfony_react_todo@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="symfony_react_todo@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="symfony_react_todo@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="symfony_react_todo: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-    </expand>
-    <select />
+    <execution />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -56,13 +26,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IgnoredFileRootStore">
-    <option name="generatedRoots">
-      <set>
-        <option value="E:\GITHUB_PROJECTS\symfony5-react-todo\.idea" />
-      </set>
-    </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -184,7 +147,6 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
@@ -199,29 +161,17 @@
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\GITHUB_PROJECTS\symfony5-react-todo\app" />
-      <recent name="E:\GITHUB_PROJECTS\symfony5-react-todo\.docker\apache" />
-      <recent name="E:\GITHUB_PROJECTS\symfony5-react-todo\.docker\example" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\GITHUB_PROJECTS\symfony5-react-todo" />
       <recent name="E:\GITHUB_PROJECTS\symfony5-react-todo\.docker\php-fpm" />
       <recent name="E:\GITHUB_PROJECTS\symfony5-react-todo\.docker\example" />
       <recent name="E:\GITHUB_PROJECTS\symfony5-react-todo\.docker\php" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\GITHUB_PROJECTS\symfony5-react-todo\app" />
+      <recent name="E:\GITHUB_PROJECTS\symfony5-react-todo\.docker\apache" />
+      <recent name="E:\GITHUB_PROJECTS\symfony5-react-todo\.docker\example" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -508,13 +458,12 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Webpack encore added" />
@@ -536,19 +485,11 @@
     <option name="LAST_COMMIT_MESSAGE" value="phpstan errors" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="184" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578134669089">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="552" y="184" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1578134669089" />
     <state x="704" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578756476166">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="704" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1578347388879" />
     <state x="704" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050/1920.-180.1920.1050@0.0.1920.1050" timestamp="1578756476166" />
-    <state x="765" y="242" key="#com.intellij.ide.util.MemberChooser" timestamp="1578134892524">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="765" y="242" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1578134892524" />
     <state x="640" y="254" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1578349054381">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -557,19 +498,16 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="210" y="284" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1050/1920.-180.1920.1050@0.0.1920.1050" timestamp="1579104796071" />
-    <state x="573" y="30" key="CommitChangelistDialog2" timestamp="1578681156886">
+    <state x="573" y="23" width="1263" height="1027" key="CommitChangelistDialog2" timestamp="1586983871144">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="573" y="30" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1578681156886" />
+    <state x="573" y="23" width="1263" height="1027" key="CommitChangelistDialog2/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1586983871144" />
     <state x="740" y="281" key="FileChooserDialogImpl" timestamp="1579029505342">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="281" key="FileChooserDialogImpl/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1578430298968" />
     <state x="740" y="281" key="FileChooserDialogImpl/0.0.1920.1050/1920.-180.1920.1050@0.0.1920.1050" timestamp="1579029505342" />
-    <state x="475" y="473" width="524" height="206" key="Github.ShareDialog" timestamp="1578084544240">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="475" y="473" width="524" height="206" key="Github.ShareDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1578084544240" />
     <state x="540" y="261" key="IDE.errors.dialog" timestamp="1578755815328">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -578,18 +516,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="752" y="152" key="RollbackChangesDialog/0.0.1920.1050/1920.-180.1920.1050@0.0.1920.1050" timestamp="1578753204032" />
-    <state x="461" y="168" key="SettingsEditor" timestamp="1578086033745">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="461" y="168" key="SettingsEditor/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1578086033745" />
     <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1578681578362">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1578681578362" />
-    <state x="794" y="352" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1578134681462">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="794" y="352" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1578134681462" />
     <state x="639" y="263" width="642" height="524" key="find.popup" timestamp="1578758304477">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

@@ -19,14 +19,19 @@ class Todo
 
     /**
      * @var string|null
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="string", length=10, unique=true)
      */
-    private $name;
+    private $task;
+
+    /**
+     * @ORM\Column(type="string", length=500)
+     */
+    private $description;
 
     public function __construct()
     {
         $this->id = null;
-        $this->name = null;
+        $this->task = null;
     }
 
     public function getId(): ?int
@@ -37,17 +42,17 @@ class Todo
     /**
      * @return string
      */
-    public function getName(): string
+    public function getTask(): string
     {
-        return $this->name;
+        return $this->task;
     }
 
     /**
-     * @param string $name
+     * @param string $task
      */
-    public function setName(string $name): void
+    public function setTask(string $task): void
     {
-        $this->name = $name;
+        $this->task = $task;
     }
 
     /**
@@ -56,7 +61,20 @@ class Todo
     public function toArray() :array {
         return [
             'id' => $this->id,
-            'name' => $this->name
+            'task' => $this->task,
+            'description' => $this->description
         ];
+    }
+
+    public function getDescription(): ?string
+    {
+        return $this->description;
+    }
+
+    public function setDescription(string $description): self
+    {
+        $this->description = $description;
+
+        return $this;
     }
 }

@@ -6,6 +6,7 @@ use App\Entity\Todo;
 use App\Repository\TodoRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Exception;
+use JsonException;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -37,6 +38,7 @@ class TodoController extends AbstractController
      * @Route("/create", name="api_todo_create", methods={"POST"})
      * @param Request $request
      * @return JsonResponse
+     * @throws JsonException
      */
     public function create(Request $request): JsonResponse
     {
@@ -46,7 +48,8 @@ class TodoController extends AbstractController
 
         $content = json_decode($requestContent, false, 512, JSON_THROW_ON_ERROR);
         $todo = new Todo();
-        $todo->setName($content->name);
+        $todo->setTask($content->task);
+        $todo->setDescription($content->description);
 
         try {
             $this->entityManager->persist($todo);
@@ -68,7 +71,7 @@ class TodoController extends AbstractController
                 'level' => 'success',
                 'text' => [
                     'Todo has been created!',
-                    'Task: ' . $content->name
+                    'Task: ' . $content->task
                 ]
             ]
         ]);
@@ -82,7 +85,6 @@ class TodoController extends AbstractController
         $todos = $this->todoRepository->findAll();
 
         $arrayOfTodos = [];
-        /** @var Todo $todo */
         foreach ($todos as $todo) {
             $arrayOfTodos[] = $todo->toArray();
         }
@@ -92,9 +94,10 @@ class TodoController extends AbstractController
 
     /**
      * @Route("/update/{id}", name="api_todo_update",  methods={"PUT"})
-     * @param Todo $todo
+     * @param Todo    $todo
      * @param Request $request
      * @return JsonResponse
+     * @throws JsonException
      */
     public function update(Todo $todo, Request $request): JsonResponse
     {
@@ -102,7 +105,17 @@ class TodoController extends AbstractController
         $requestContent = $request->getContent();
 
         $content = json_decode($requestContent, false, 512, JSON_THROW_ON_ERROR);
-        $todo->setName($content->name);
+
+        if ($todo->getTask() === $content->task && $todo->getDescription() === $content->description) {
+            return $this->json([
+                'message' => [
+                    'text' => 'There was no change to the To-Do. Neither the task or the description was changed.'
+                ]
+            ]);
+        }
+
+        $todo->setTask($content->task);
+        $todo->setDescription($content->description);
 
         try {
             $this->entityManager->flush();
@@ -150,10 +163,7 @@ class TodoController extends AbstractController
         }
 
         return $this->json([
-            'level' => 'success',
-            'text' => [
-                'Todo has been deleted!'
-            ]
+            'message' => ['text' => 'To-Do has successfully been deleted!', 'level' => 'success']
         ]);
     }
 }
