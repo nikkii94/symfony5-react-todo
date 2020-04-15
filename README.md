@@ -1,4 +1,8 @@
-Template for creating Symfony 5 applications with Docker
+Symfony 5 Todo Application with React & Material UI
+
+![CI](https://github.com/nikkii94/symfony5-react-todo/workflows/CI/badge.svg)
+
+![Static code analysis](https://github.com/nikkii94/symfony5-react-todo/workflows/Static%20code%20analysis/badge.svg?branch=master)
 
 /etc/hosts
 ``` 
